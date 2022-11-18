@@ -1,14 +1,13 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import "./../web-components/dashboard-component";
 
 const Admin = () => {
   return (
-    <section>
-      <h1>Admins Page</h1>
-      <div className="flexGrow">
-        <Link to="/">Home</Link>
-      </div>
-    </section>
+    <div>
+      <dashboard-component></dashboard-component>
+      <Link to="/">Home</Link>
+    </div>
   );
 };
 

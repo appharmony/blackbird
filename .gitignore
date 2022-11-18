@@ -4,6 +4,7 @@
 dist
 tmp
 /out-tsc
+packages/cards/.angular/cache
 
 # dependencies
 node_modules
