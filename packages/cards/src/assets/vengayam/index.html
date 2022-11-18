@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard</title>
+  </head>
+
+  <body>
+    <dashboard-component>
+      <widget-wrapper
+        slot="column-0"
+        width="300px"
+        height="500px"
+        name="Cash In & Out"
+      >
+        <cash-in-cash-out
+          slot="children"
+          data='[{"month":10,"cashIn":634,"cashOut":800},{"month":8,"cashIn":576,"cashOut":453}]'
+        ></cash-in-cash-out>
+      </widget-wrapper>
+      <widget-wrapper
+        slot="column-1"
+        width="300px"
+        height="240px"
+        name="Cash In & Out 2"
+      >
+        <cash-in-cash-out slot="children" data="[]"></cash-in-cash-out>
+      </widget-wrapper>
+      <widget-wrapper
+        slot="column-1"
+        width="300px"
+        height="280px"
+        name="Cash In & Out 3"
+      >
+        <cash-in-cash-out
+          slot="children"
+          data='[{"month":10,"cashIn":673.2,"cashOut":270.7},{"month":9,"cashIn":576,"cashOut":453}]'
+        ></cash-in-cash-out>
+      </widget-wrapper>
+    </dashboard-component>
+    <!-- Scripts -->
+    <script src="./dashboard-component.js"></script>
+  </body>
+</html>
