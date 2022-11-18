@@ -21,8 +21,6 @@ const Home = () => {
       <br />
       <Link to="/admin">Go to the Admin page</Link>
       <br />
-      <Link to="/lounge">Go to the Lounge</Link>
-      <br />
       <div className="flexGrow">
         <button onClick={signOut} class="button sign-out">
           Sign Out

@@ -6,7 +6,6 @@ import Cards from "./components/Cards";
 import Admin from "./components/Admin";
 import Missing from "./components/Missing";
 import Unauthorized from "./components/Unauthorized";
-import Lounge from "./components/Lounge";
 import RequireAuth from "./components/RequireAuth";
 import { Routes, Route } from "react-router-dom";
 
@@ -34,12 +33,6 @@ function App() {
 
         <Route element={<RequireAuth allowedRoles={[ROLES.Admin]} />}>
           <Route path="admin" element={<Admin />} />
-        </Route>
-
-        <Route
-          element={<RequireAuth allowedRoles={[ROLES.User, ROLES.Cards]} />}
-        >
-          <Route path="lounge" element={<Lounge />} />
         </Route>
 
         {/* catch all */}
